@@ -1,5 +1,5 @@
 class ContactFormsController < ApplicationController
-  skip_before_action :verify_authenticity_token
+  skip_before_action :verify_authenticity_token, only: [:create]
 
   def create
     @contact_form = ContactForm.new(contact_form_params)
@@ -16,4 +16,5 @@ class ContactFormsController < ApplicationController
     params.require(:contact_form).permit(:first_name, :last_name, :email, :phone, :budget, :website, :message)
   end
 end
+
 
