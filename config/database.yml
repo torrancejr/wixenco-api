@@ -50,6 +50,4 @@ test:
 #
 production:
   <<: *default
-  database: wixenco_api_production
-  username: wixenco_api
-  password: <%= ENV["WIXENCO_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV['JAWSDB_URL'] %>
