@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  post 'analyze', to: 'site_analysis#analyze'
   resources :contact_forms, only: [:create]
 
 
