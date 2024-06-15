@@ -1,0 +1,241 @@
+DEBUG:root:Received prompt: hi
+DEBUG:root:Received prompt: hi
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "prompt": "hi", "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/completions HTTP/1.1" 404 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/completions processing_ms=21 request_id=req_1349fdc759477979323d4e425c166646 response_code=404
+INFO:openai:error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+DEBUG:root:Received prompt: hi
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "hi"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=684 request_id=req_b5c953f2576039f6e3d2d99a4585bfee response_code=200
+DEBUG:root:Response: Hello! How can I assist you today?
+DEBUG:root:Received prompt: hi
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "hi"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=437 request_id=req_539da5a11517e6a5614f137a98785838 response_code=200
+DEBUG:root:Response: Hello! How can I assist you today?
+DEBUG:root:Received prompt: what is wixenco.com?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "what is wixenco.com?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1220 request_id=req_ecad363aee0df120c4b6252ec35c57b1 response_code=200
+DEBUG:root:Response: I'm not able to browse the internet in real-time, so I can't provide the most current information on specific websites. As of my last update, I don't have any information on wixenco.com. If you're looking for information about a specific website, I recommend visiting the website directly or searching for reviews and information online.
+DEBUG:root:Received prompt: what services does this site offer?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "what services does this site offer?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=935 request_id=req_4a2cd0facfa6fa2778ed8c27055cbd25 response_code=200
+DEBUG:root:Response: This site offers various services, including answering questions, providing information, offering recommendations, and assisting with a wide range of topics. Feel free to ask about anything you need help with!
+DEBUG:root:Received prompt: do you offer SEO services?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "do you offer SEO services?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1057 request_id=req_e0989ff81ef261927eb0bb7d37a5c331 response_code=200
+DEBUG:root:Response: I'm here to provide information and assistance, but I don't offer any services myself. However, I can certainly provide guidance or answer any questions you may have about SEO. Just let me know how I can help!
+DEBUG:root:Received prompt: what is SEO
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "what is SEO"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1687 request_id=req_5efefb081b9eb1d3296de3eb0c80fbbf response_code=200
+DEBUG:root:Response: SEO stands for Search Engine Optimization. It is the practice of optimizing your website and its content to improve its visibility and ranking in search engine results pages (SERPs). The goal of SEO is to drive organic (non-paid) traffic to your website by making it more attractive and relevant to search engines like Google, Bing, and Yahoo. This involves using different techniques and strategies to improve your website's performance and increase its chances of ranking higher in search results for specific keywords or phrases.
+DEBUG:root:Received prompt: can you connect me with the owner of the site?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "can you connect me with the owner of the site?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1335 request_id=req_293185880531d378a8f7a5dfcc458d0d response_code=200
+DEBUG:root:Response: I'm an AI assistant and I can help you with a variety of things. If you have any specific inquiries or need assistance with anything related to the site, feel free to let me know, and I'll do my best to assist you.
+DEBUG:root:Received prompt: how do I contact wixenco.com?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "how do I contact wixenco.com?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1471 request_id=req_0d0dd311664539502a7150f69aea1e1e response_code=200
+DEBUG:root:Response: You can contact Wixenco.com by visiting their website at www.wixenco.com and looking for their contact page or support section. They may have a contact form, email address, phone number, or live chat option for you to reach out to them. Alternatively, you can try searching for their contact information on their social media pages or reaching out to any customer support channels listed on their website.
+DEBUG:root:Received prompt: good morning
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "good morning"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=640 request_id=req_f5d327da4927c124b346d958ff4c4c8f response_code=200
+DEBUG:root:Response: Good morning! How can I assist you today?
+DEBUG:root:Received prompt: i was seeing about this sites SEO services
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "i was seeing about this sites SEO services"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=2524 request_id=req_f3f8b784b9fd6442d151f49b61dd0bd9 response_code=200
+DEBUG:root:Response: That's great to hear that you're interested in SEO services to improve your website's visibility online. SEO (Search Engine Optimization) plays a crucial role in increasing your website's ranking on search engine results pages, which can drive more traffic to your site and potentially increase your business and brand awareness.
+
+There are different ways to approach SEO services, depending on your specific goals and budget. Some common SEO services include:
+
+1. On-Page Optimization: This includes optimizing your website's content, images, meta tags, and other elements to make it more search engine-friendly.
+2. Off-Page Optimization: This involves building quality backlinks from other websites to increase your site's credibility and authority.
+3. Technical SEO: This focuses on improving your website's
+DEBUG:root:Received prompt: how do i contact them?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "how do i contact them?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=2647 request_id=req_119d7df0e03a4dec0ffc832df5429c79 response_code=200
+DEBUG:root:Response: To contact someone, you can use various methods such as email, phone, social media, or in person if possible. 
+
+1. Email: Send them an email using their email address if you have it. Make sure to clearly state your purpose and be concise in your communication.
+
+2. Phone: If you have their phone number, you can give them a call. Make sure to introduce yourself and explain the reason for your call.
+
+3. Social media: If the person is active on social media platforms like Facebook, Twitter, or LinkedIn, you can send them a direct message or tag them in a post.
+
+4. In person: If the person is someone you know personally or a colleague at work, you can speak to them in person to
+DEBUG:root:Received prompt: where are you located?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "where are you located?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:root:Received prompt: where are you located?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "where are you located?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=935 request_id=req_8e5c1175d67b0bafde1ac9f512badc39 response_code=200
+DEBUG:root:Response: I exist in the digital realm and do not have a physical location. I am here to assist you with any questions or tasks you have. How can I help you today?
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=729 request_id=req_4a1934d4b532ed64cfffa66b5344de2e response_code=200
+DEBUG:root:Response: I exist in the digital realm and don't have a physical location. However, I am here to assist you with any questions or tasks you may have!
+DEBUG:root:Received prompt: where are you located?
+DEBUG:root:Response: West Chester, PA, but I serve all 50 states.
+DEBUG:root:Received prompt: where are you located?
+DEBUG:root:Response: West Chester, PA, but we cater to clients across all 50 states.
+DEBUG:root:Received prompt: can I speak with somone?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "can I speak with somone?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=462 request_id=req_f6f477b9bc2d84bc927a287a72420ca8 response_code=200
+DEBUG:root:Response: Of course! How can I assist you today?
+DEBUG:root:Received prompt: i want to contact someone about service
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "i want to contact someone about service"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=375 request_id=req_791629541c2d36f62b4fb125f9363c5a response_code=200
+DEBUG:root:Response: Sure, I can help you with that. Who would you like to contact about the service?
+DEBUG:root:Received prompt: the owner
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "the owner"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=477 request_id=req_28056ae4c10c1cf1a8995407a1681551 response_code=200
+DEBUG:root:Response: Hello! How can I assist you today?
+DEBUG:root:Received prompt: can I speak with someone in regards to services?
+DEBUG:root:Response: You can reach us at 610-656-5293 or by email at ryan@wixenco.com and we will respond promptly.
+DEBUG:root:Received prompt: what about refunds?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "what about refunds?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=2189 request_id=req_d752e25253b60d440dcb5136829e31f7 response_code=200
+DEBUG:root:Response: Refunds can vary depending on the store's policies. It's always best to check the store's refund policy before making a purchase. Typically, refunds are issued back to the original payment method used for the purchase. If you have specific questions about a refund, feel free to ask!
+DEBUG:root:Received prompt: do you offer refunds?
+DEBUG:root:Response: We offer a satisfaction guarantee. If you are not satisfied with our services, please contact us within 30 days, and we will address your concerns.
+DEBUG:root:Received prompt: what services do you offer?
+DEBUG:root:Response: We offer custom website design and development, advanced SEO, chatbot development and integration, and comprehensive Google services and analytics.
+DEBUG:root:Received prompt: where are you located?
+DEBUG:root:Response: West Chester, PA, but we cater to clients across all 50 states.
+DEBUG:root:Received prompt: how much does it cost?
+DEBUG:root:Response: Our pricing varies depending on the scope and complexity of the project. Please contact us for a detailed quote.
+DEBUG:root:Received prompt: how can i contact someone?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "how can i contact someone?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1825 request_id=req_d678671b3267a0a5ea56484b2a9f4498 response_code=200
+DEBUG:root:Response: To contact someone, you can try using one of the following methods:
+
+1. Phone call: If you have the person's phone number, you can give them a call.
+
+2. Email: Sending an email is a common way to get in touch with someone.
+
+3. Social media: You can reach out to the person through social media platforms such as Facebook, Twitter, or LinkedIn.
+
+4. Messaging apps: You can also use messaging apps like WhatsApp or Messenger to contact the person.
+
+5. In-person visit: If the person is nearby, you can visit them in person.
+
+Make sure to choose a method that you think the person is most likely to respond to.
+DEBUG:root:Received prompt: how do I contact someone?
+DEBUG:root:Response: You can reach us at 610-656-5293 or by email at ryan@wixenco.com and we will respond promptly.
+DEBUG:root:Received prompt: is there someone i can contact?
+DEBUG:root:Response: You can reach us at 610-656-5293 or by email at ryan@wixenco.com and we will respond promptly.
+DEBUG:root:Received prompt: hi
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "hi"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=438 request_id=req_6d0d6f7633b3648bb7dbdb503ca8adfa response_code=200
+DEBUG:root:Response: Hello! How can I assist you today?
+DEBUG:root:Received prompt: what services do you provide?
+DEBUG:root:Response: We offer custom website design and development, advanced SEO, chatbot development and integration, and comprehensive Google services and analytics.
+DEBUG:root:Received prompt: what services do you provide?
+DEBUG:root:Response: We offer custom website design and development, advanced SEO, chatbot development and integration, and comprehensive Google services and analytics.
+DEBUG:root:Received prompt: whats pricing?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "whats pricing?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1636 request_id=req_f69d34b5664f051471a43154e740cd31 response_code=200
+DEBUG:root:Response: Pricing refers to the process of determining the value of a product or service and setting a specific amount or rate that customers will pay to acquire it. It involves considering various factors such as production costs, competition, market demand, and perceived value to determine a price that is both competitive and profitable. Effective pricing strategies are essential for businesses to maximize revenue and stay competitive in the market.
+DEBUG:root:Received prompt: where are you located?
+DEBUG:root:Response: West Chester, PA, but we cater to clients across all 50 states.
+DEBUG:root:Received prompt: where are you located?
+DEBUG:root:Response: West Chester, PA, but we cater to clients across all 50 states.
+DEBUG:root:Received prompt: how can i contact you?
+DEBUG:root:Response: You can reach us at 610-656-5293 or by email at ryan@wixenco.com and we will respond promptly.
+DEBUG:root:Received prompt: a/s/l?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "a/s/l?"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=624 request_id=req_de571ae02be54e181a226139fdb9f0ee response_code=200
+DEBUG:root:Response: I'm a virtual assistant, so I don't have an age, gender, or location. How can I assist you today?
+DEBUG:root:Received prompt: what services do you offer?
+DEBUG:root:Response: We offer custom website design and development, advanced SEO, chatbot development and integration, and comprehensive Google services and analytics.
+DEBUG:root:Received prompt: test
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "test"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=546 request_id=req_d37f5769b8eff64b20d4b54f308b636d response_code=200
+DEBUG:root:Response: Hello! How can I assist you today?
