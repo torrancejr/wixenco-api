@@ -23,4 +23,5 @@ tqdm==4.66.4
 typing_extensions==4.12.2
 urllib3==2.2.1
 yarl==1.9.4
+openai
 python-dotenv
