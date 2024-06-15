@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'chatbot/respond'
 
   post 'analyze', to: 'site_analysis#analyze'
+  post 'chatbot/respond', to: 'chatbot#respond'
   resources :contact_forms, only: [:create]
 
 
