@@ -3,7 +3,7 @@ class RankingsController < ApplicationController
 
   def fetch_rank
     domain = params[:domain]
-    api_key = ENV["SERP_API"]
+    api_key = ENV['SERP_API']
     query = "site:#{domain}"
 
     response = HTTParty.get("https://api.scaleserp.com/search", {
