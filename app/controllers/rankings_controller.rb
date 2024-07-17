@@ -22,3 +22,4 @@ class RankingsController < ApplicationController
   end
 end
 
+
