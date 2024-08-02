@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<h1>Contact Form Submission</h1>
+<p>
+  You have received a new message from <%= @form_data[:first_name] %> <%= @form_data[:last_name] %>.
+</p>
+<p>
+  <strong>Email:</strong> <%= @form_data[:email] %>
+</p>
+<p>
+  <strong>Phone:</strong> <%= @form_data[:phone] %>
+</p>
+<p>
+  <strong>Budget:</strong> <%= @form_data[:budget] %>
+</p>
+<p>
+  <strong>Website:</strong> <%= @form_data[:website] %>
+</p>
+<p>
+  <strong>Message:</strong> <%= @form_data[:message] %>
+</p>
+</body>
+</html>

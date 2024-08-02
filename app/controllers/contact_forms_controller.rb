@@ -4,6 +4,7 @@ class ContactFormsController < ApplicationController
   def create
     @contact_form = ContactForm.new(contact_form_params)
     if @contact_form.save
+      ContactMailer.contact_email(contact_form_params).deliver_now
       render json: { message: 'Form submitted successfully' }, status: :created
     else
       render json: { errors: @contact_form.errors.full_messages }, status: :unprocessable_entity
