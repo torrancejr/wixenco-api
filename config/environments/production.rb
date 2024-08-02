@@ -87,4 +87,16 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    user_name: 'apikey', # This is the string literal 'apikey', not the ID of your API key
+    password: ENV['SENDGRID_API_KEY'], # Your SendGrid API key
+    domain: 'wixenco.com',
+    address: 'smtp.sendgrid.net',
+    port: 587,
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
+
+  config.action_mailer.default_url_options = { host: 'wixenco-api-2ee861916a31.herokuapp.com', protocol: 'https' }
 end
