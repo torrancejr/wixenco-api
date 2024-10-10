@@ -239,3 +239,5 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:4
 DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
 DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=546 request_id=req_d37f5769b8eff64b20d4b54f308b636d response_code=200
 DEBUG:root:Response: Hello! How can I assist you today?
+DEBUG:root:Received prompt: where are you located?
+DEBUG:root:Response: West Chester, PA, but we cater to clients across all 50 states.
