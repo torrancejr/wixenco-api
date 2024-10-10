@@ -14,7 +14,9 @@ class ChatbotController < ApplicationController
 
   def get_response_from_model(message)
     script_path = Rails.root.join('scripts', 'chatbot_openai.py')
-    command = "python3 #{script_path} \"#{message}\""
+    venv_path = Rails.root.join('path', 'to', 'venv', 'bin', 'python3') # Update this path to match the virtual environment path
+
+    command = "#{venv_path} #{script_path} \"#{message}\""
     stdout, stderr, status = Open3.capture3(command)
     Rails.logger.info("Command: #{command}")
     Rails.logger.info("STDOUT: #{stdout}")
