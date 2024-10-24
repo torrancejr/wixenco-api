@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   post 'analyze', to: 'site_analysis#analyze'
   post 'chatbot/respond', to: 'chatbot#respond'
+  post 'seo_audit/analyze', to: 'seo_audit#analyze'
+
   resources :contact_forms, only: [:create]
 
 
