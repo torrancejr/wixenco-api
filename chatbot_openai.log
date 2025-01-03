@@ -251,3 +251,28 @@ DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/c
 DEBUG:root:Response: Hello! How can I help you today?
 DEBUG:root:Received prompt: Tell me about your services.
 DEBUG:root:Response: We offer custom website design and development, advanced SEO, chatbot development and integration, and comprehensive Google services and analytics.
+DEBUG:root:Received prompt: test
+DEBUG:root:Received prompt: test
+DEBUG:root:Received prompt: test
+DEBUG:root:Received prompt: Hello, how are you?
+DEBUG:root:Received prompt: test
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'test'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 150}}
+DEBUG:openai._base_client:Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f94f8e7fca0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f94f8cc8f40> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f94f8ec8250>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 03 Jan 2025 18:31:25 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-iotyd2bl7nghdxejixcily73'), (b'openai-processing-ms', b'264'), (b'openai-version', b'2020-10-01'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199840'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'48ms'), (b'x-request-id', b'req_7d8e8dab1b5bd1699def4d220a293b6c'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=mwmVMzFiWE5QKS9EybFsJoUFK9OXhK39kOf6nK189k0-1735929085-1.0.1.1-CYBM7Ww5TjNxXv2g1EBKnuEJd80U.6TJDzYE06eUA96IqlzCQSm4XjLNv51zRs6MEmX_m0FppV03g_UDnicCog; path=/; expires=Fri, 03-Jan-25 19:01:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=ClPNyy__gcMZoTA2szbwU5fVjn1EAO_f0OXk1WNlKsU-1735929085763-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8fc510cf9d940f49-EWR'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Fri, 03 Jan 2025 18:31:25 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'user-iotyd2bl7nghdxejixcily73'), ('openai-processing-ms', '264'), ('openai-version', '2020-10-01'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '200000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '199840'), ('x-ratelimit-reset-requests', '8.64s'), ('x-ratelimit-reset-tokens', '48ms'), ('x-request-id', 'req_7d8e8dab1b5bd1699def4d220a293b6c'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=mwmVMzFiWE5QKS9EybFsJoUFK9OXhK39kOf6nK189k0-1735929085-1.0.1.1-CYBM7Ww5TjNxXv2g1EBKnuEJd80U.6TJDzYE06eUA96IqlzCQSm4XjLNv51zRs6MEmX_m0FppV03g_UDnicCog; path=/; expires=Fri, 03-Jan-25 19:01:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=ClPNyy__gcMZoTA2szbwU5fVjn1EAO_f0OXk1WNlKsU-1735929085763-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '8fc510cf9d940f49-EWR'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+DEBUG:openai._base_client:request_id: req_7d8e8dab1b5bd1699def4d220a293b6c
+DEBUG:root:Response: Hello! How can I assist you today?

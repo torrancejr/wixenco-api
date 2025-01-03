@@ -1,5 +1,7 @@
 # scripts/chatbot_openai.py
-import openai
+from openai import OpenAI
+
+client = OpenAI()
 import sys
 import logging
 from dotenv import load_dotenv
@@ -11,7 +13,6 @@ load_dotenv()
 # Configure logging
 logging.basicConfig(filename='chatbot_openai.log', level=logging.DEBUG)
 
-openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def get_response(prompt):
     if "located" in prompt.lower():
@@ -39,15 +40,13 @@ def get_response(prompt):
         return "We offer a satisfaction guarantee. If you are not satisfied with our services, please contact us within 30 days, and we will address your concerns."
 
     # Use the correct OpenAI method
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": prompt},
-        ],
-        max_tokens=150
-    )
-    return response['choices'][0]['message']['content'].strip()
+    response = client.chat.completions.create(model="gpt-3.5-turbo",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": prompt},
+    ],
+    max_tokens=150)
+    return response.choices[0].message.content.strip()
 
 
 if __name__ == "__main__":
