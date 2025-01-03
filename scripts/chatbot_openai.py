@@ -18,7 +18,7 @@ def get_response(prompt):
         return "West Chester, PA, but we cater to clients across all 50 states."
 
     if any(phrase in prompt.lower() for phrase in ["speak with someone", "contact you", "get in touch", "reach you", "talk to someone", "contact"]):
-            return "You can reach us at 610-656-5293 or by email at ryan@wixenco.com and we will respond promptly."
+        return "You can reach us at 610-656-5293 or by email at ryan@wixenco.com and we will respond promptly."
 
     if any(phrase in prompt.lower() for phrase in ["business hours", "when are you open", "operating hours"]):
         return "Our business hours are Monday to Friday, 9 AM to 5 PM EST."
@@ -38,8 +38,8 @@ def get_response(prompt):
     if any(phrase in prompt.lower() for phrase in ["refund policy", "do you offer refunds", "refund", "refunds"]):
         return "We offer a satisfaction guarantee. If you are not satisfied with our services, please contact us within 30 days, and we will address your concerns."
 
-
-    response = openai.Chat.create(
+    # Use the correct OpenAI method
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
@@ -48,6 +48,7 @@ def get_response(prompt):
         max_tokens=150
     )
     return response['choices'][0]['message']['content'].strip()
+
 
 if __name__ == "__main__":
     prompt = sys.argv[1]

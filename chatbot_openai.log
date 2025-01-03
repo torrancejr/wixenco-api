@@ -249,3 +249,5 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:4
 DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
 DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=178 request_id=req_b96c2537b82e19681aa93ab36e4b4358 response_code=200
 DEBUG:root:Response: Hello! How can I help you today?
+DEBUG:root:Received prompt: Tell me about your services.
+DEBUG:root:Response: We offer custom website design and development, advanced SEO, chatbot development and integration, and comprehensive Google services and analytics.
