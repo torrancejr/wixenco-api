@@ -241,3 +241,11 @@ DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/c
 DEBUG:root:Response: Hello! How can I assist you today?
 DEBUG:root:Received prompt: where are you located?
 DEBUG:root:Response: West Chester, PA, but we cater to clients across all 50 states.
+DEBUG:root:Received prompt: test
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "test"}], "max_tokens": 150}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=178 request_id=req_b96c2537b82e19681aa93ab36e4b4358 response_code=200
+DEBUG:root:Response: Hello! How can I help you today?
