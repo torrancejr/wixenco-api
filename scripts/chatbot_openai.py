@@ -39,7 +39,7 @@ def get_response(prompt):
         return "We offer a satisfaction guarantee. If you are not satisfied with our services, please contact us within 30 days, and we will address your concerns."
 
 
-   response = openai.Chat.create(
+    response = openai.Chat.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
