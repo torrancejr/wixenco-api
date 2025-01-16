@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  default from: 'ryan@wixenco.com'
+  default from: 'hello@wixenco.com'
 
   def contact_email(form_data)
     @form_data = form_data
