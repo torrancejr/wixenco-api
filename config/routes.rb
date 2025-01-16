@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post 'chatbot/respond', to: 'chatbot#respond'
   post 'seo_audit/analyze', to: 'seo_audit#analyze'
 
-  resources :contact_forms, only: [:create]
+  resources :contact_forms, only: [:create, :index]
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
